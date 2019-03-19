@@ -1,0 +1,9 @@
+{
+	"name": "com.unity.docs-review",
+	"displayName":"Documentation Review Package",
+	"version": "0.1.0-preview",
+	"unity": "2018.3",
+	"description": "You can replace this string with your own description of the review package, but it is not necessary. This description appears in the Package Manager window but not in the DocFx output.",
+	"dependencies": {
+	}
+}
