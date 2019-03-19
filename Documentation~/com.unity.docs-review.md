@@ -1,3 +1,4 @@
+#com.unity.docs-review
 > **_Package Documentation Review Template_**
 >
 > Use this template to bundle up documentation for technical review. You can download this package and save it locally, follow the instructions for setting up a local package and regenerate the documentation with the DocTools package. See [Package documentation with Git](https://docs.google.com/document/d/15sUDWM6cFnDYobQBxuqn7qo5mAfIJHEPmu4Oe0Kb7xs/edit#heading=h.5pzo4lmokc4t) for details.
@@ -36,7 +37,7 @@ The following pieces of documentation are ready for review:
 
 This excerpt fits into the overall Table Of Contents like so:
 
-![Table Of Contents](images/PkgName-DocParcel_01.png)
+![Table Of Contents](Images/PkgName-DocParcel_01_5c9143807f519418fc007a63.png)
 
 These three sections are not directly related, they are just packaged together for convenience. 
 
@@ -69,7 +70,7 @@ My goal for updating the &lt;PACKAGE-NAME&gt; documentation (in general) include
 
 
 
-<a name="tldr"></a>
+
 
 ## Section-specific notes
 
@@ -103,7 +104,7 @@ At the present time, there is no easy path for reviews of documentation for pack
 
 ---
 
-<a name="one"></a>
+
 
 # One
 
@@ -111,7 +112,7 @@ At the present time, there is no easy path for reviews of documentation for pack
 
 
 
-<a name="two"></a>
+
 
 # Two
 
@@ -119,7 +120,7 @@ At the present time, there is no easy path for reviews of documentation for pack
 
 
 
-<a name="two-and-a-half"></a>
+
 
 ## Two and a Half
 
@@ -127,7 +128,7 @@ At the present time, there is no easy path for reviews of documentation for pack
 
 
 
-<a name="two-and-three-quarters"></a>
+
 
 ## Two and Three Quarters
 
@@ -135,7 +136,7 @@ At the present time, there is no easy path for reviews of documentation for pack
 
 
 
-<a name="three"></a>
+
 
 # Three
 
