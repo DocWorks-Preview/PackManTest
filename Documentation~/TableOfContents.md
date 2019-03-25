@@ -1,6 +1,5 @@
-Unity Manual TOC
+Unity Manual ToC
 ================
-
  - [Garbage]()
 	 - [thistitle](thistitle.md)
 	 - [index](index.md)
