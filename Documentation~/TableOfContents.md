@@ -1,5 +1,8 @@
-Unity Manual ToC
+Unity Manual TOC
 ================
 
-* [Start page][index]
-    * [Review template](com.unity.docs-review)
+ - [Garbage]()
+	 - [thistitle](thistitle.md)
+	 - [index](index.md)
+	 - [Review template](com.unity.docs-review.md)
+
