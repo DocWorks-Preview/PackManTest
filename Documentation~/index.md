@@ -15,7 +15,7 @@ A package is a container that stores various types of features or Assets, such a
 
 When Unity opens a Project, the [Unity Package Manager](upm-parts) reads the [Project manifest](upm-manifestPrj) (**1**) to figure out what packages to load in the Project. Then it sends a request (**2**) to the [registry server](upm-concepts#Registry) (**3**) for each package that appears as a dependency in the manifest. The registry server sends the requested information and data back to the Package Manager (**4**), which then installs those packages (**5**) in the Project. Each Project has its own manifest which lists the packages to load as "dependencies" of the Project.
 
-![How the Unity Package Manager installs packages](../uploads/Main/upm-overview.png)
+![How the Unity Package Manager installs packages](images/upm-overview.png)
 
 If you want to include a package in your Project, you must update the [Project manifest](upm-manifestPrj) to include it in the list of dependencies. If you wish, you can modify the Project manifest directly, but it is safer and easier to let the Package Manager do that. For more information on using the user interface, see the documentation for the [Packages window](upm-ui). 
 
@@ -184,23 +184,23 @@ You must restart the Unity Editor or Hub after changing either of these environm
 
 Use the Unity Package Manager (in Unity’s top menu: **Window** > **Package Manager**) to view which [packages](Packages) are available for installation or already installed in your Project. In addition, you can use this window to see [which versions are available](upm-ui-list#VersionList), and [install](upm-ui-install), [remove](upm-ui-remove), [disable](upm-ui-disable), or [update](upm-ui-update) packages for each Project.
 
-![The Packages window](../uploads/Main/PackageManagerUI-Main.png)
+![The Packages window](images/PackageManagerUI-Main.png)
 
 The Packages window displays:
 
-![A](../uploads/Main/LetterA.png)  The **Add package from disk** button, which allows you to [specify the location](upm-ui-local) of an external package.
+![A](images/LetterA.png)  The **Add package from disk** button, which allows you to [specify the location](upm-ui-local) of an external package.
 
-![B](../uploads/Main/LetterB.png) The [package scope drop-down menu](upm-ui-filter), which allows you to filter which packages appear in the list.
+![B](images/LetterB.png) The [package scope drop-down menu](upm-ui-filter), which allows you to filter which packages appear in the list.
 
-![C](../uploads/Main/LetterC.png) The [Advanced button](#Advanced), which allows you to display preview packages in addition to packages that have been verified to work with Unity.
+![C](images/LetterC.png) The [Advanced button](#Advanced), which allows you to display preview packages in addition to packages that have been verified to work with Unity.
 
-![D](../uploads/Main/LetterD.png) The [search box](upm-ui-search), which allows you to look for packages by name.
+![D](images/LetterD.png) The [search box](upm-ui-search), which allows you to look for packages by name.
 
-![E](../uploads/Main/LetterE.png) The [packages list view](upm-ui-list), which displays all packages that match the filter and search parameters you specify.
+![E](images/LetterE.png) The [packages list view](upm-ui-list), which displays all packages that match the filter and search parameters you specify.
 
-![F](../uploads/Main/LetterF.png) The [package-specific detail view](upm-ui-details), which displays information specific to the package selected in the list.
+![F](images/LetterF.png) The [package-specific detail view](upm-ui-details), which displays information specific to the package selected in the list.
 
-![G](../uploads/Main/LetterG.png) The [status bar](upm-ui-details#StatusBar), which displays messages about the package load status and warnings about the network.
+![G](images/LetterG.png) The [status bar](upm-ui-details#StatusBar), which displays messages about the package load status and warnings about the network.
 
 
 <a name="Advanced"></a>
@@ -219,19 +219,19 @@ The **Advanced** drop-down menu allows you to perform these actions:
 
 The **Packages** window displays the list of packages according to the criteria that you select by filtering, including, or searching:
 
-![List of all packages available, including preview packages](../uploads/Main/PackageManagerUI-View-alt.png) 
+![List of all packages available, including preview packages](images/PackageManagerUI-View-alt.png) 
 
-![A](../uploads/Main/LetterA.png) You can click these expander icons to show and hide the list of versions available for this package.
+![A](images/LetterA.png) You can click these expander icons to show and hide the list of versions available for this package.
 
-![B](../uploads/Main/LetterB.png) The package version displays the version of the package that's installed. If the package is not yet installed, the version that appears is the recommended version.
+![B](images/LetterB.png) The package version displays the version of the package that's installed. If the package is not yet installed, the version that appears is the recommended version.
 
-![C](../uploads/Main/LetterC.png) These icons show you the status of the package:
+![C](images/LetterC.png) These icons show you the status of the package:
 
 | **Icon:**                                                    | **Description**                                              |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![check mark](../uploads/Main/PackageManagerUI-checkmark.png) | A check mark indicates that the package is already [installed](upm-ui-install) or [enabled](upm-ui-disable). |
-| ![download icon](../uploads/Main/PackageManagerUI-downloadicon.png) | The download icon indicates that the installed packages have an [available update](upm-ui-update). |
-| ![error indicator](../uploads/Main/PackageManagerUI-errorflag.png) | An error icon indicates that something went wrong during installation or loading. For more advice on resolving errors, see [Error messages](upm-errors). |
+| ![check mark](images/PackageManagerUI-checkmark.png) | A check mark indicates that the package is already [installed](upm-ui-install) or [enabled](upm-ui-disable). |
+| ![download icon](images/PackageManagerUI-downloadicon.png) | The download icon indicates that the installed packages have an [available update](upm-ui-update). |
+| ![error indicator](images/PackageManagerUI-errorflag.png) | An error icon indicates that something went wrong during installation or loading. For more advice on resolving errors, see [Error messages](upm-errors). |
 
 By default, the **Packages** window displays the list of **All packages** with no [Preview](upm-concepts#Preview) packages, but you can [filter](upm-ui-filter) the list to display only packages installed in your Project (including [local](upm-local) packages) or display only [built-in](upm-concepts#BuiltIn) Unity packages. You can also [include Preview packages](#ShowPreview) in the list and [search](upm-ui-search) for a specific package by package [name](upm-manifestPrj#name), [tag](upm-ui-details#Tags) name, or package [version number](upm-concepts#Version).
 
@@ -243,7 +243,7 @@ By default, the **Packages** window displays the list of **All packages** with n
 
 To include preview packages in the list, select **Show preview packages** from the [Advanced](upm-ui#Advanced) drop-down menu.
 
-![Show preview packages](../uploads/Main/upm-docs.png)  
+![Show preview packages](images/upm-docs.png)  
 
 <a name="VersionList"></a>
 
@@ -253,13 +253,13 @@ To view the list of versions available for a package:
 
 1. In the list of packages, click the expander icon to the left of the package name.
 
-	![List with no preview versions](../uploads/Main/PackageManagerUI-AvailabeUpdates.png) 
+	![List with no preview versions](images/PackageManagerUI-AvailabeUpdates.png) 
 
 	If there are updates available, they are displayed along with the **See all versions** link. 
 
 2. Click **See all versions** to see the list of all available versions for that package.
 
-	![List with preview versions](../uploads/Main/PackageManagerUI-AvailabeVersions.png) 
+	![List with preview versions](images/PackageManagerUI-AvailabeVersions.png) 
 
 3. You can select any of these versions for the current package and see the details specific to that version in the [Details view](upm-ui-details).
 
@@ -268,31 +268,31 @@ To view the list of versions available for a package:
 
 The pane on the right side of the Packages window displays details about the selected package.
 
-![Package detail pane](../uploads/Main/PackageManagerUI-DetailsPane.png) 
+![Package detail pane](images/PackageManagerUI-DetailsPane.png) 
 
 
 
 These details include the following information:
 
-![A](../uploads/Main/LetterA.png) The display name.
+![A](images/LetterA.png) The display name.
 
-![B](../uploads/Main/LetterB.png) The [version number](upm-ui-list#VersionList) (and [tag](upm-ui-details#Tags), if available)
+![B](images/LetterB.png) The [version number](upm-ui-list#VersionList) (and [tag](upm-ui-details#Tags), if available)
 
-![C](../uploads/Main/LetterC.png) The links to [open the package documentation](upm-docs) page, the package change log (if available), and the license information. 
+![C](images/LetterC.png) The links to [open the package documentation](upm-docs) page, the package change log (if available), and the license information. 
 
-![D](../uploads/Main/LetterD.png) The official package name from the [registry](upm-concepts#Registry). Unity packages always start with "**com.unity.**".
+![D](images/LetterD.png) The official package name from the [registry](upm-concepts#Registry). Unity packages always start with "**com.unity.**".
 
-![E](../uploads/Main/LetterE.png) The author.
+![E](images/LetterE.png) The author.
 
-![F](../uploads/Main/LetterF.png) A brief description.
+![F](images/LetterF.png) A brief description.
 
-![G](../uploads/Main/LetterG.png)Dependency information. This section lists whether this package depends on another package and which version. Installed packages indicate the status of the dependencies after the version number. Packages without dependencies display the message "No dependencies".  
+![G](images/LetterG.png)Dependency information. This section lists whether this package depends on another package and which version. Installed packages indicate the status of the dependencies after the version number. Packages without dependencies display the message "No dependencies".  
 
-![H](../uploads/Main/LetterH.png) Packages that include sample Assets display the samples along with an import button. To import the sample code, click the **Import in project** button next to the sample.
+![H](images/LetterH.png) Packages that include sample Assets display the samples along with an import button. To import the sample code, click the **Import in project** button next to the sample.
 
-![I](../uploads/Main/LetterI.png) Button to [install](upm-ui-install) or [update](upm-ui-update) a package (or the **Up to date** message if the selected version is already installed.)
+![I](images/LetterI.png) Button to [install](upm-ui-install) or [update](upm-ui-update) a package (or the **Up to date** message if the selected version is already installed.)
 
-![J](../uploads/Main/LetterJ.png) Buttons to [remove](upm-ui-remove) or [disable](upm-ui-disable) the package.
+![J](images/LetterJ.png) Buttons to [remove](upm-ui-remove) or [disable](upm-ui-disable) the package.
 
 <a name="StatusBar"></a>
 #### Status bar
@@ -301,11 +301,11 @@ The Package Manager displays messages in the status bar at the bottom left of th
 
 There are typically three status messages that you might see. The **Loading packages** message appears briefly the first time you open Packman UI in a new Project. However, if the Package Manager [detects a problem](upm-errors), such as a missing network connection, the Package Manager displays a warning in the status bar:
 
-![Network error message](../uploads/Main/PackageManagerUI-StatusBar_Network.png) 
+![Network error message](images/PackageManagerUI-StatusBar_Network.png) 
 
 You will also often see a message informing you when the last update occurred:
 
-![Update message](../uploads/Main/PackageManagerUI-StatusBar_Update.png) 
+![Update message](images/PackageManagerUI-StatusBar_Update.png) 
 
 <a name="Tags"></a>
 #### Tags
@@ -337,7 +337,7 @@ To find a specific package version:
 
 2. If you are looking for a [preview package](upm-concepts#Preview), select **Show preview packages** from the [Advanced](upm-ui#Advanced) drop-down menu. 
 
-	![Show preview packages](../uploads/Main/upm-docs.png) 
+	![Show preview packages](images/upm-docs.png) 
 
 3. Select the package you want information for from the packages [List view](upm-ui-list) (on the left). 
 
@@ -345,19 +345,19 @@ To find a specific package version:
 
 	A new row appears, displaying the **See all versions** link. 
 
-	![See all versions](../uploads/Main/upm-docs1.png) 
+	![See all versions](images/upm-docs1.png) 
 
 5. Click the **See all versions** link. 
 
 	A scrollable list appears with all available versions.
 
-	![All available versions](../uploads/Main/upm-docs2.png) 
+	![All available versions](images/upm-docs2.png) 
 
 6. Click on another version to select it. 
 
 	The package details appear in the pane on the right. 
 
-	![Select a version to see its details](../uploads/Main/upm-docs3.png) 
+	![Select a version to see its details](images/upm-docs3.png) 
 
 7. Notice the **verified** tag no longer appears in this example because version 1.2.4 of the TextMesh Pro package is not verified for the version of Unity used in this example. 
 
@@ -375,7 +375,7 @@ To find a specific package version:
 
 To change which packages appear in the list, select the scope you want from the drop-down menu in the left-hand corner of the Packages window.
 
-![Set the scope of packages to list](../uploads/Main/PackageManagerUI-ScopeButton.png) 
+![Set the scope of packages to list](images/PackageManagerUI-ScopeButton.png) 
 
 You can select from these options:
 
@@ -396,7 +396,7 @@ When you select a new scope, your choice appears on the package scope drop-down 
 
 You can use the search box at the top of the Packages window to find any packages that match the text you enter. The Package Manager updates the package list as you enter text, displaying every package within the current scope that matches. For example, if you enter **web** in the search box, the list displays different results depending on whether you chose the **Built-in packages** scope or the **All packages** scope:
 
-![Search for specific text](../uploads/Main/PackageManagerUI-SearchResults.png)
+![Search for specific text](images/PackageManagerUI-SearchResults.png)
 
 You can look for a package by its [package name](upm-manifestPkg#name), its [tag name](upm-ui-details#Tags), or its [package version number](upm-ui-list#VersionList). The Package Manager analyzes the text that you enter to detect which method you are using and updates the list of packages dynamically.
 
@@ -431,7 +431,7 @@ You can perform a variety of tasks through the **Packages** window:
 
 To open the **Packages** window, navigate to Unity's main menu and go to **Window** > **Package Manager**.
 
-![Access the Packages window from the Window menu](../uploads/Main/upm-ui-access.png) 
+![Access the Packages window from the Window menu](images/upm-ui-access.png) 
 
 
 #### Installing from the registry
@@ -440,7 +440,7 @@ You can install a package only when the scope is set to **All packages**:
 
 1. Open the **Packages** window and select **All packages** from the [package scope](upm-ui-filter) drop-down menu.
 
-	![Change the scope to All packages](../uploads/Main/upm-ui-allpackages.png) 
+	![Change the scope to All packages](images/upm-ui-allpackages.png) 
 
 2. Select the package you want to install from the [list of packages](upm-ui-list). The package information appears in the [details pane](upm-ui-details).
 
@@ -448,7 +448,7 @@ You can install a package only when the scope is set to **All packages**:
 
 4. Click the **Install** button. 
 
-	![Install button in the bottom right corner of the details view](../uploads/Main/upm-ui-install.png) 
+	![Install button in the bottom right corner of the details view](images/upm-ui-install.png) 
 
 	When the progress bar finishes, the new package is ready to use.
 
@@ -463,7 +463,7 @@ To load a package from your local disk:
 
 2. The **Add package from disk** button appears.
 
-	![Add package from disk button](../uploads/Main/PackageManagerUI-ExternalPackageButton.png) 
+	![Add package from disk button](images/PackageManagerUI-ExternalPackageButton.png) 
 
 3. Click the **Add package from disk** button to bring up a file browser.
 
@@ -486,13 +486,13 @@ To remove an installed package:
 
 2. If the [package scope](upm-ui-filter) is currently set to **Built-in packages**, select either **In Project** or **All packages** from the [package scope](upm-ui-filter) drop-down menu.
 
-	![Switch the scope to In Project](../uploads/Main/upm-ui-inprojects.png) 
+	![Switch the scope to In Project](images/upm-ui-inprojects.png) 
 
 3. Select the package you want to remove from the [list of packages](upm-ui-list). The package information appears in the [details pane](upm-ui-details).
 
 4. Click the **Remove** button. 
 
-	![Remove button in the bottom right corner of the details view](../uploads/Main/upm-ui-remove.png) 
+	![Remove button in the bottom right corner of the details view](images/upm-ui-remove.png) 
 
 	When the progress bar finishes, the package disappears from the list.
 
@@ -511,13 +511,13 @@ To disable a built-in package:
 
 1. Open the **Packages** window and select **Built-in packages** from the [package scope](upm-ui-filter) drop-down menu.
 
-	![Switch the scope to Built-in packages](../uploads/Main/upm-ui-builtin.png) 
+	![Switch the scope to Built-in packages](images/upm-ui-builtin.png) 
 
 2. Select the built-in package you want to disable. Its information appears in the Details pane.
 
 3. Click the **Disable** button. 
 
-	![Disable button in the bottom right corner of the details view](../uploads/Main/upm-ui-disable.png) 
+	![Disable button in the bottom right corner of the details view](images/upm-ui-disable.png) 
 
 	When the progress bar finishes, the check mark no longer appears next to the built-in package and the  **Disable** button becomes an **Enable** button.
 
@@ -532,7 +532,7 @@ You can update a package while in either the **In Project** or **All packages** 
 
 2. If the [package scope](upm-ui-filter) is currently set to **Built-in packages**, select either **In Project** or **All packages** from the [package scope](upm-ui-filter) drop-down menu.
 
-	![Switch the scope to In Project](../uploads/Main/upm-ui-inprojects.png) 
+	![Switch the scope to In Project](images/upm-ui-inprojects.png) 
 
 	An arrow indicator appears next to any packages that have updates available.
 
@@ -540,19 +540,19 @@ You can update a package while in either the **In Project** or **All packages** 
 
 4. In the [list of packages](upm-ui-list), click the expander icon to the left of the package name.
 
-	![List with no preview versions](../uploads/Main/PackageManagerUI-AvailabeUpdates.png) 
+	![List with no preview versions](images/PackageManagerUI-AvailabeUpdates.png) 
 
 	If there are updates available, the latest version and verified version appear along with the **See all versions** link. 
 
 5. Click **See all versions** to see the list of all available versions for that package.
 
-	![List with preview versions](../uploads/Main/PackageManagerUI-AvailabeVersions.png) 
+	![List with preview versions](images/PackageManagerUI-AvailabeVersions.png) 
 
 6. You can select any of these versions for the current package and see the details specific to that version in the [details view](upm-ui-details).
 
 7. Click the **Update to** button.
 
-	![Update to button in the bottom right corner of the details pane](../uploads/Main/upm-ui-update.png) 
+	![Update to button in the bottom right corner of the details pane](images/upm-ui-update.png) 
 
 	When the progress bar finishes, the new package version information appears in the Details pane, and any new functionality is immediately available.
 
@@ -568,7 +568,7 @@ You can access the documentation for a specific package by:
 
 When the package page opens, you can see four links at the top of the page.
 
-![Unity's Package documentation menu bar](../uploads/Main/PackageManagerUI-DocSite.png)
+![Unity's Package documentation menu bar](images/PackageManagerUI-DocSite.png)
 
 To switch back and forth between the **Manual** documentation, the **Scripting API** documentation, the **Changelog**, and the **License** information for this package, click the corresponding link at the top of the page.
 
@@ -577,7 +577,7 @@ To switch back and forth between the **Manual** documentation, the **Scripting A
 
 Each version of the Unity Manual documentation provides the [Packages documentation](PackagesList) page, which lists the packages you can use with that version of Unity:
 
-![Unity packages list](../uploads/Main/PackageManagerUI-List.png) 
+![Unity packages list](images/PackageManagerUI-List.png) 
 
 You can click the link in the list to open the *latest* version of that package documentation. If you can't find the package you want in this list, there may be several reasons:
 
@@ -600,7 +600,7 @@ To access the documentation for a specific package version:
 
 2. If you are looking for a **preview** package, select **Show preview packages** from the **Advanced** drop-down menu.
 
-	![Show preview packages](../uploads/Main/upm-docs.png)  
+	![Show preview packages](images/upm-docs.png)  
 
 3. Select the package you want information for from the list on the left.
 
@@ -608,29 +608,29 @@ To access the documentation for a specific package version:
 
 	A new row appears, displaying the **See all versions** link.
 
-	![See all versions](../uploads/Main/upm-docs1.png) 
+	![See all versions](images/upm-docs1.png) 
 
 5. Click the **See all versions** link.
 
 	A scrollable list appears with all available versions.
 
-	![All available versions](../uploads/Main/upm-docs2.png) 
+	![All available versions](images/upm-docs2.png) 
 
 6. Click on another version to select it. 
 
 	The package details appear in the pane on the right.
 
-	![Select a version to see its details](../uploads/Main/upm-docs3.png)
+	![Select a version to see its details](images/upm-docs3.png)
 
 	Notice the **verified** tag no longer appears in this example because version 1.2.4 of the TextMesh Pro package is not verified for Unity version 2019.1.
 
 7. Click the **View documentation** link to open the documentation for the selected version of the package.
 
-	![View documentation](../uploads/Main/upm-docs4.png) 
+	![View documentation](images/upm-docs4.png) 
 
 	**NOTE**: If you are offline when you click the **View documentation** link and the package is on your computer (that is, embedded, installed from a local folder, or installed from a local Git repository), the Package Manager opens the first MD file it finds under the `<package-root-folder>/Documentation~` folder in your default MD viewer. If the Package Manager installed the package from a server (that is, from a package registry server or a Git remote repository), the following message appears instead:
 
-	![This package does not contain offline documentation](../uploads/Main/upm-docs5.png)  
+	![This package does not contain offline documentation](images/upm-docs5.png)  
 
 You can follow this procedure for any of the versions of any of the packages. However, the documentation is not necessarily different for each package version release, since some version updates involve extremely minor changes.
 
@@ -639,7 +639,7 @@ You can follow this procedure for any of the versions of any of the packages. Ho
 
 The Project view displays the list of packages currently installed in your Project from all sources. This means that immutable packages that you installed from a package registry are visible, as well as mutable packages, such as embedded, Git, and local packages.
 
-![Registry package (immutable) on the left and a local package (mutable) on the right](../uploads/Main/upm-inspect.png) 
+![Registry package (immutable) on the left and a local package (mutable) on the right](images/upm-inspect.png) 
 
 You can inspect the contents of any package that appears in the Project view. You can also inspect the package manifest through a dedicated inspector. 
 
@@ -654,17 +654,17 @@ For [embedded](upm-concepts#Embedded), [Git](upm-concepts#Git), or [local](upm-c
 
 When you click on the package manifest file in the Project view, the **Package Manifest** window opens:
 
-![Inspecting a package manifest in the Editor](../uploads/Main/class-PackageManifestImporter.png) 
+![Inspecting a package manifest in the Editor](images/class-PackageManifestImporter.png) 
 
-![A](../uploads/Main/LetterA.png) Click the **Open** button to load this package manifest in the code editor, such as Visual Studio. Click the **View in Package Manager** button to open the **Packages** window and load this package in the details pane.
+![A](images/LetterA.png) Click the **Open** button to load this package manifest in the code editor, such as Visual Studio. Click the **View in Package Manager** button to open the **Packages** window and load this package in the details pane.
 
-![B](../uploads/Main/LetterB.png) The [Information](#Info) section contains details about this specific package version.
+![B](images/LetterB.png) The [Information](#Info) section contains details about this specific package version.
 
-![C](../uploads/Main/LetterC.png) Use the **Brief Description** text box to specify the text that you want to appear on the details pane of the **Packages** window. For more information, see the documentation for the [description](upm-manifestPkg#description) attribute. 
+![C](images/LetterC.png) Use the **Brief Description** text box to specify the text that you want to appear on the details pane of the **Packages** window. For more information, see the documentation for the [description](upm-manifestPkg#description) attribute. 
 
-![D](../uploads/Main/LetterD.png) Use the [Dependencies](#Depend) section to manage the list of packages that this package depends on.
+![D](images/LetterD.png) Use the [Dependencies](#Depend) section to manage the list of packages that this package depends on.
 
-![E](../uploads/Main/LetterE.png) Click the **Revert** button to discard any changes you've made to the manifest. Click the **Apply** button to save any changes you've made to the manifest. 
+![E](images/LetterE.png) Click the **Revert** button to discard any changes you've made to the manifest. Click the **Apply** button to save any changes you've made to the manifest. 
 
 
 
@@ -1158,7 +1158,7 @@ Each registry object contains a unique **name**, a location (**url**), and an ar
 
 When you add a package to a Project, Unity considers that package to be a dependency of the Project. However, a package can also have dependencies on other packages, which may create indirect dependencies in a Project that uses this package. 
 
-![Direct and indirect package dependencies](../uploads/Main/upm-conflicts-dependencies.png) 
+![Direct and indirect package dependencies](images/upm-conflicts-dependencies.png) 
 
 In this example, if you install Package A and Package B in your Project, then your Project has direct dependencies on both Package A and Package B. However, if Package B also has a dependency on Package C, then your Project also has an indirect dependency on Package C.
 
@@ -1172,7 +1172,7 @@ Unity [resolves the package conflict](#Auto) by considering the version number o
 
 When Unity requests multiple versions of the same package, the Package Manager automatically selects the *highest* requested version (the most recent version) of that package to load and displays a description of the conflict in the Unity console. However, the Package Manager selects a lower version of a dependency if the higher version has a more indirect dependency.
 
-![Package Manager chooses v2.0.0 of Package X because it is 'closer'](../uploads/Main/upm-conflicts-auto.png) 
+![Package Manager chooses v2.0.0 of Package X because it is 'closer'](images/upm-conflicts-auto.png) 
 
 In this example, the higher version (**2.0.1**) of Package X appears as a dependency three levels away from the Project (via Package B and Package C). The Package Manager loads version **2.0.0** of Package X because its dependency is two levels away from the Project (via only Package A). 
 
@@ -1198,7 +1198,7 @@ For example, this Project has the following **dependencies** value in its `manif
 
 Package A has a dependency on **1.0.0** of Package B and Package C has a dependency on **2.0.0** of Package B:
 
-![Overriding package versions in the manifest](../uploads/Main/upm-conflicts-override.png) 
+![Overriding package versions in the manifest](images/upm-conflicts-override.png) 
 
 In this case, the Package Manager flags Package B as being in conflict. Unity displays a conflict warning in the console and loads version **2.0.0** of Package B. 
 
@@ -1254,13 +1254,13 @@ The Package Manager displays error indicators in the [Packages window](upm-ui) w
 
   Error messages that appear in the [status bar](upm-ui#StatusBar) indicate the Package Manager has detected an issue that is not related to a specific package. For example, if the Package Manager cannot access the [package registry server](upm-concepts#Registry), it displays this message in the status bar:
 
-  ![Network error message](../uploads/Main/PackageManagerUI-StatusBar_Network.png) 
+  ![Network error message](images/PackageManagerUI-StatusBar_Network.png) 
 
   If your network cannot reach the package registry server, it is probably because there is a connection problem with the network. When you or your system administrator [fix the network error](#Network), the status bar clears.
 
 * **Package-specific issues**
 
-  If a specific package has a problem when loading or installing, the error icon (![error indicator](../uploads/Main/PackageManagerUI-errorflag.png) appears in the [package list](upm-ui-list) next to the compromised package. To find out what the problem is, open the compromised package's [details pane](upm-ui-details).
+  If a specific package has a problem when loading or installing, the error icon (![error indicator](images/PackageManagerUI-errorflag.png) appears in the [package list](upm-ui-list) next to the compromised package. To find out what the problem is, open the compromised package's [details pane](upm-ui-details).
 
 
 <a name="Missing"></a>
@@ -1348,7 +1348,7 @@ If a Project has too many package conflicts, you can reset your Project back to 
 
 To return to the default package configuration, select **Reset Packages to defaults** from the Help menu.
 
-![Help > Reset Packages to defaults](../uploads/Main/upm-errors-reset.png)
+![Help > Reset Packages to defaults](images/upm-errors-reset.png)
 
 
 <a name="Cloning"></a>
